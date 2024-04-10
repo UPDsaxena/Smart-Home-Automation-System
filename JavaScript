@@ -1,0 +1,29 @@
+// script.js
+
+// Function to toggle device state
+function toggleDevice(deviceId) {
+    var device = document.getElementById(deviceId);
+    if (device.classList.contains('on')) {
+        device.classList.remove('on');
+        // Send request to turn off the device (using AJAX)
+    } else {
+        device.classList.add('on');
+        // Send request to turn on the device (using AJAX)
+    }
+}
+
+// Event listeners for device buttons
+document.getElementById('lights-control').addEventListener('click', function() {
+    toggleDevice('lights');
+});
+
+document.getElementById('thermostat-control').addEventListener('click', function() {
+    // Code to adjust thermostat settings
+});
+
+// Add more event listeners for other devices
+
+// Function to add automation rule
+function addAutomationRule() {
+    // Code to add a new automation rule based on user input
+}
